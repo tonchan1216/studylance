@@ -4,7 +4,7 @@ var util = require('util');
 
 //Database
 var pg = require('pg');
-var con = "tcp://postgres:admin@localhost:5432/pg_express";
+var con = "tcp://postgres://jrvenknemncwiw:e30025c1205881535893b0a93dd41a2b6e4da3e17f425066f31484f2c566489f@ec2-54-243-39-245.compute-1.amazonaws.com:5432/d9dkdotlj74l6o";
 
 //rid: room ID(ランダム文字列)生成
 function rid_gen(){
