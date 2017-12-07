@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="Mobirise v4.5.2, mobirise.com" name="generator">
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
+  <meta content="Website Creator Description" name="description">
+  <title><%= title %></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,400&subset=cyrillic,latin,greek,vietnamese" rel="stylesheet">
+  <link href="/assets/web/assets/mobirise-icons/mobirise-icons.css" rel="stylesheet">
+  <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/mobirise/css/style.css" rel="stylesheet">
+  <link href="/assets/mobirise-gallery/style.css" rel="stylesheet">
+  <link href="/assets/mobirise-slider/style.css" rel="stylesheet">
+  <link href="/assets/mobirise/css/mbr-additional.css" rel="stylesheet" type="text/css">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse" data-rv-view="69" id="ext_menu-i">
+    <div class="mbr-navbar__section mbr-section">
+      <div class="mbr-section__container container">
+      <div class="mbr-navbar__container">
+        <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+          <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+            <span class="mbr-brand__logo"><a class="go-home mbri-change-style mbr-iconfont mbr-iconfont-menu" href="/"></a></span>
+            <span class="mbr-brand__name"><a class="go-home mbr-brand__name text-white" href="/">STUDYLANCE</a></span>
+          </span>
+        </div>
+        <div class="mbr-navbar__hamburger mbr-hamburger">
+        <span class="mbr-hamburger__line"></span>
+        </div>
+        <div class="mbr-navbar__column mbr-navbar__menu">
+        <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+          <div class="mbr-navbar__column">
+          <ul class="mbr-navbar__items mbr-navbar__items--right float-left mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active mbr-buttons--only-links">
+            <li class="mbr-navbar__item">
+            <a class="go-home mbr-buttons__link btn text-white" href="/">HOME</a>
+            </li>
+          </ul>
+          </div>
+        </nav>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mbr-section mbr-after-navbar" data-rv-view="27" id="header3-w">
+    <div class="mbr-section__container container mbr-section__container--first">
+      <div class="mbr-header mbr-header--wysiwyg row">
+        <div class="col-sm-6 col-sm-offset-2">
+          <h3 class="mbr-header__text">Let's start study right now</h3>
+          <p class="mbr-header__subtext">Room ID: <span id="room_id"><%= room_id %></span></p>
+
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="mbr-buttons mbr-buttons--center">
+                <a id="make-call" class="step2 mbr-buttons__btn btn btn-lg btn-danger">Call</a>
+                <a id="end-call" class="step3 mbr-buttons__btn btn btn-lg btn-danger" style="display: none;">End call</a>
+                <a class="go-home mbr-buttons__btn btn btn-lg btn-default">Leave</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="select">
+            <label for="videoSource">Video source: </label><select id="videoSource"></select>
+          </div>
+          <video id="my-video" muted="true" autoplay playsinline></video>
+          <!-- Get local audio/video stream -->
+          <div id="step1">
+            <p>Please click `allow` on the top of the screen so we can access your webcam and microphone for calls.</p>
+            <div id="step1-error">
+              <p>Failed to access the webcam and microphone. Make sure to run this demo on an http server and click allow when asked for permission by the browser.</p>
+              <a href="#" class="pure-button pure-button-error" id="step1-retry">Try again</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mbr-gallery mbr-section mbr-section--no-padding" data-rv-view="30" id="gallery1-v" style="background-color: rgb(76, 105, 114);">
+    <!-- Gallery -->
+    <div id="video-gallery" class=" mbr-gallery-layout-default">
+      <div class="row">
+        <div id="their-videos" class="col-md-8 row mbr-gallery-row no-gutter">
+          <!-- Videoが挿入される -->
+        </div>
+
+        <div class="col-md-4">
+          <div id="step-chat">
+            <p>Your id: <span id="my-id">...</span></p>
+            <div id="chat_box">
+            </div>
+
+            <form id="send">
+              <input type="text" id="text" placeholder="Enter message">
+              <input id="send_button" class="button" type="submit" value="Send">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </section>
+
+  <section class="mbr-section mbr-section--relative mbr-section--fixed-size" data-rv-view="4" id="contacts1-l" style="background-color: rgb(60, 60, 60);">
+    <div class="mbr-section__container container">
+      <div class="mbr-contacts mbr-contacts--wysiwyg row" style="padding-top: 45px; padding-bottom: 45px;">
+        <div class="col-sm-4">
+          <div>
+            <a class="go-home mbri-change-style mbr-iconfont mbr-iconfont-contacts1" href="/"></a>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-4">
+              <p class="mbr-contacts__text"></p>
+            </div>
+            <div class="col-sm-4">
+              <p class="mbr-contacts__text">
+                <strong>CONTACTS</strong><br>
+                Email: cleartone1216@gmail.com<br>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p class="mbr-contacts__text"><strong>LINKS</strong></p>
+              <ul class="mbr-contacts__list">
+                <li>
+                  <a class="mbr-contacts__link text-gray" href="https://github.com/tonchan1216">tonchan1216 on GitHub</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" data-rv-view="0" id="footer1-g" style="background-color: rgb(68, 68, 68);">
+    <div class="mbr-section__container container">
+      <div class="mbr-footer mbr-footer--wysiwyg row" style="padding-top: 36.9px; padding-bottom: 36.9px;">
+        <div class="col-sm-12">
+          <p class="mbr-footer__copyright"></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/web/assets/jquery/jquery.min.js">
+  </script> 
+  <script src="/assets/bootstrap/js/bootstrap.min.js">
+  </script> 
+  <script src="/assets/smooth-scroll/smooth-scroll.js">
+  </script> 
+  <script src="/assets/masonry/masonry.pkgd.min.js">
+  </script> 
+  <script src="/assets/imagesloaded/imagesloaded.pkgd.min.js">
+  </script> 
+  <script src="/assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js">
+  </script> 
+  <script src="/assets/mobirise/js/script.js">
+  </script> 
+  <script src="/assets/mobirise-gallery/script.js">
+  </script>
+  <script type="text/javascript" src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <script type="text/javascript" src="/js/key.js"></script>
+  <script type="text/javascript" src="/js/chame.js"></script>
+  <script type="text/javascript" src="/js/sfu.js"></script>
+</body>
+</html>

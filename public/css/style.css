@@ -1,0 +1,130 @@
+#my-video {
+    margin-top: 15px;
+    width: 280px;
+    height: auto;
+    background-color: #eee;
+}
+
+/*#their-video {
+    width: 100%;
+    height: 75%;
+    max-height: 480px;
+    background-color: #eee;
+}*/
+
+#step1-error, #step2, #step3 {
+    display: none;
+}
+
+.select select {
+	width: 60%;
+}
+
+#my-id {
+    font-weight: bold;
+}
+
+@media (min-width: 0px){
+	#video-gallery {
+		height: 150vw;
+	}
+	#step-chat {
+		height: 75vw;
+	}
+	#chat_box {
+		height: 50vw;
+	}
+}
+
+@media (min-width: 992px){
+	#video-gallery {
+		height: 50vw;
+	}
+	#step-chat {
+		height: 50vw;
+	}
+	#chat_box {
+		height: 40vw;
+	}
+}
+
+
+
+#their-videos video {
+	width: 100%;
+}
+
+/*#their-videos > div {
+	float: left;
+	width: 50%;
+}*/
+
+#chat_box {
+	width: 100%;
+	overflow-y:scroll;
+	background: #7292c2;
+}
+
+#send {
+	margin: 5px 0;
+	width: 100%;
+}
+
+#text {
+	width: 78%;
+}
+
+#send_button {
+	width: 20%;
+}
+
+#step-chat {
+	padding: 2.5%;
+}
+
+.you .user {
+
+}
+
+.you .text {
+	background-color: #84e249;
+	float: right;
+}
+
+.peer .text {
+	background-color: #ffffff;
+	float: left;
+}
+
+.user {
+	float: left;
+	text-align: center;
+	width: 32px;
+	font-size: 150%;
+	color: white; 
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.text {
+	margin: 15px 10px;
+	padding: 0 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.you, .peer, .notice {
+  clear:both;
+}
+
+.notice {
+	font-size: 80%;
+	color: #3e3e3e;
+	text-align: center;
+}
+
+.mbr-caption-background {
+	opacity: 0.6;
+}
